@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="treat-data">
+    <img src="{{ url_for('static', filename='images/') }}{{ treat.image }}" alt="{{ treat.name }}">
+    <div>
+        <p>Name: {{ treat.name }}</p><br>
+        <p>Price: {{ treat.price }} €</p>
+        <p>Description: {{ treat.descreption}} </p>
+    </div>
+    
+    <form action="" method="post">
+        <input type="submit" value="add to cart" name="add" class="submit">
+    </form>
+</div>
+    
+{% endblock %}

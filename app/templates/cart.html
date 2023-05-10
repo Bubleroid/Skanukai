@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>This is your cart</h2>
+<div class="cart">
+   {% for treat in cart %}
+      <div class="cart-element">
+         <img src="{{ url_for('static', filename='images/') }}{{ treat.image }}" alt="{{ treat.name }}" height="210" class="treat-img">
+         <div class="treat-info">
+            <p>Name: {{ treat.name }}</p>
+            <p>Price: {{ treat.price }} €</p>
+            <p>Description: {{ treat.descreption}} </p>
+         </div>
+      </div>
+      <hr>
+   {% endfor %}
+</div>
+{% endblock %}

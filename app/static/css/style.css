@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu {
+    background-color: #006663;
+    height: 60px;
+    text-align: center;
+}
+.menu > a {
+    margin: 20px;
+    position: relative;
+    line-height: 60px;
+    color: #B2BEBF;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: #9eb2b4;
+}
+.main {
+    text-align: center;
+}
+.banner {
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 248px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    color: #ff7f50;
+}
+hr {
+    background-color: #889C9B;
+    height: 4px;
+    margin: 20px;
+}
+.pros-list {
+    text-align: center;
+}
+.pros {
+    display: inline-block;
+    margin: 15px;
+    background-color: #889C9B;
+    padding: 17px;
+    height: 180px;
+    width: 150px;
+    text-align: center;
+}
+.submit {
+    border-color: #3B3936;
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 10px;
+    background-color: #889C9B;
+    transition: all .3s;
+}
+.submit:hover {
+    background-color: #486966;
+}
+.treat {
+    background-color: #889C9B;
+    display: inline-block;
+    margin: 20px;
+    padding: 12px;
+    width: 25%;
+    height: 320px;
+}
+.treat figcaption {
+    margin-bottom: 14px;
+}
+.treat-img {
+    height: 180px;
+    width: 200px;
+    object-fit: cover;
+}
+.btn {
+    margin: 10px;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #486966;
+    transition: all .3s;
+}
+.btn:hover {
+    background-color: #3B3936;
+}
+.cart-element {
+    background-color: #7b9493;
+    display: inline-block;
+    padding: 32px;
+    width: 90%;
+}
+.cart-element > * {
+    margin: 8px;
+}
+.cart-element > img {
+    float: right;
+}
+.treat-info {
+    display: inline;
+    float: right;
+}
+.best-treat {
+    background-color: #889C9B;
+    height: 360px;
+    display: inline-block;
+    width: 25%;
+    margin-top: 32px;
+    margin-left: 20px;
+    padding: 10px;
+}
+.best-treat-img {
+    height: 210px;
+    width: 250px;
+    object-fit: cover;
+}
+.best-treat figcaption {
+    margin-bottom: 14px;
+}
+.treat-data {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+}

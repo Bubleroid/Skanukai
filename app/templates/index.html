@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="banner">
+        <h2>Welcome to our website!</h2>
+        <p>Tasty and organic food for your pet!</p>
+    </div>
+    <hr>
+    <div class="best-treats">
+        <h1>Our best treats for your dog</h1>
+        {% for treat in best_treats %}
+            <div class="best-treat">
+                <figure>
+                    <img src="{{ url_for('static', filename='images/') }}{{ treat.image }}" alt="{{ treat.name }}" class="best-treat-img">
+                    <figcaption>{{ treat.name }}</figcaption>
+                </figure>
+                <a href="{{ url_for('treat', name=treat.name) }}" class="btn">buy</a>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="proses">
+        <h1>Our pros</h1>
+        <ul class="pros-list">
+            <li class="pros">
+                <figure>
+                    <img src="{{ url_for('static', filename='images/bone.png') }}" alt="bone" height="70">
+                    <figcaption><h3>Tasty and organic food</h3></figcaption>
+                </figure>
+            </li>
+            <li class="pros">
+                <figure>
+                    <img src="{{ url_for('static', filename='images/badge.png') }}" alt="badge" height="70">
+                    <figcaption><h3>Low price and good quality</h3></figcaption>
+                </figure>
+            </li>
+            <li class="pros">
+                <figure>
+                    <img src="{{ url_for('static', filename='images/delivery-truck.png') }}" alt="delivery truck" height="70">
+                    <figcaption><h3>Very fast delivery</h3></figcaption>
+                </figure>
+            </li>
+        </ul>
+    </div>
+{% endblock %}

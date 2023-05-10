@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="treats">
+    {% for treat in treats %}
+        <div class="treat">
+            <figure>
+                <img src="{{ url_for('static', filename='images/') }}{{ treat.image }}" alt="{{ treat.name }}" class="treat-img">
+                <figcaption>{{ treat.name }}</figcaption>
+            </figure>
+            <a href="{{ url_for('treat', name=treat.name) }}" class="btn">buy</a>
+        </div>
+        
+    {% endfor %}
+</div>
+{% endblock %}
